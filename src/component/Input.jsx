@@ -243,12 +243,12 @@ const Input = () => {
                 <div className="iconContainer">
                   <div className="logo"><BiLogoCodepen /></div>
                   <div className="iconBox border">
-                    <div className="icon" onClick={() => reGenerate('shorter')}><BiCollapseHorizontal /></div>
-                    <div className="icon" onClick={() => reGenerate('longer')}><BiExpandHorizontal /></div>
+                    <div className="icon" title='Shorter' onClick={() => reGenerate('shorter')}><BiCollapseHorizontal /></div>
+                    <div className="icon" title='Longer' onClick={() => reGenerate('longer')}><BiExpandHorizontal /></div>
                   </div>
                   <div className="iconBox">
-                    <div className="icon" onClick={() => reGenerate('professional')}><PiShirtFoldedFill /></div>
-                    <div className="icon" onClick={() => reGenerate('casual')}><PiTShirtFill /></div>
+                    <div className="icon" title='Professional' onClick={() => reGenerate('professional')}><PiShirtFoldedFill /></div>
+                    <div className="icon" title='Casual' onClick={() => reGenerate('casual')}><PiTShirtFill /></div>
                   </div>
                 </div>
                 <div className="closeBtn" onClick={handleClose}><GrClose /></div>
